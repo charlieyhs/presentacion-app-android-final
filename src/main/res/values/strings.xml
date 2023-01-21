@@ -1,0 +1,65 @@
+<resources>
+    <string name="app_name">Presentacion</string>
+    <string name="descripcionRubik">Cubo rubik cargando</string>
+    <string name="descripcionName">Nombre de carlos</string>
+    <string name="descripcionLetra">Letra C</string>
+    <string name="github">GIT HUB</string>
+    <string name="callme">CALL ME</string>
+    <string name="email">E-MAIL</string>
+    <string name="linkedin">LINKEDIN</string>
+    <string name="whatsapp">WHATSAPP</string>
+    <string name="skill">SKILLS</string>
+    <string name="carlos">Carlos</string>
+    <string name="SkillDescripcion">MUESTRA UNA IMAGEN DE LA SKILL ACTUAL</string>
+    <string name="mensajewhatsapp">Hola Carlos Yecid Hernández Sánchez, yo soy...</string>
+    <string name="numeroCelular">573213350998</string>
+    <string name="detalleSubtitulo">Proyectos</string>
+    <string name="bomb"><b>:(){ : | : &amp; };:</b></string>
+    <string name="letra_c">C</string>
+    <string name="descripcionCabecera">Muestra un logo o una breve descripcion mia</string>
+    <string name="descripcionfotomia">Muestra una foto mia</string>
+    <string name="perfilmio"><b><i>  Carlos Hernández</i></b></string>
+    <string name="desarrollador"><b><i>Desarrollador</i></b></string>
+    <string name="descripcion">Interes en seguir obteniendo
+habilidades en el diseño y
+ejecución de proyectos en el
+área de desarrollo de software.</string>
+
+
+    <string name="title_placeholder">Title</string>
+    <string name="news_placeholder">news placeholder</string>
+    <string name="skills_info_placeholder">Here is some news</string>
+
+    <string-array name="skills_titles">
+        <item>Java</item>
+        <item>Python</item>
+        <item>C++</item>
+        <item>C</item>
+        <item>SQL</item>
+        <item>MYSQL</item>
+        <item>ECLIPSE</item>
+        <item>GIT</item>
+    </string-array>
+
+    <string-array name="skills_info">
+        <item>Aquí Algunos Desarrollos en Java</item>
+        <item>Aquí Algunos Desarrollos en Python</item>
+        <item>Aquí Algunos Desarrollos en C++</item>
+        <item>Aquí Algunos Desarrollos en C</item>
+        <item>Aquí Algunos Desarrollos en SQL</item>
+        <item>Aquí Algunos Desarrollos en MYSQL</item>
+        <item>Aquí Algunos Desarrollos en ECLIPSE</item>
+        <item>Aquí Algunos Desarrollos en GIT</item>
+    </string-array>
+
+    <array name="skills_images">
+        <item>@drawable/holamundojava</item>
+        <item>@drawable/pythonproyect</item>
+        <item>@drawable/cppproyect</item>
+        <item>@drawable/holamundoc</item>
+        <item>@drawable/sqlproyect</item>
+        <item>@drawable/mysqlproyect</item>
+        <item>@drawable/eclispseproyecto</item>
+        <item>@drawable/gitproyecto</item>
+    </array>
+</resources>

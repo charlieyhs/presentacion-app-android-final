@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/skillImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/llamada"
+            android:contentDescription="@string/SkillDescripcion"
+            android:adjustViewBounds="true"/>
+        <TextView
+            android:id="@+id/title"
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/skillImage"
+            android:text="@string/title_placeholder"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark"/>
+
+        <TextView
+            android:id="@+id/newsTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/news_placeholder"
+            android:padding="8dp"
+            android:layout_below="@+id/title"
+            android:textColor="?android:textColorSecondary"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+        <TextView
+            android:id="@+id/subTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/skills_info_placeholder"
+            android:padding="8dp"
+            android:layout_below="@+id/newsTitle"
+            style="@style/TextAppearance.AppCompat.Subhead"/>
+
+
+
+    </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

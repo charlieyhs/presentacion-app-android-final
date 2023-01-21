@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".InicioPersonal">
+
+    <ImageView
+        android:id="@+id/imagen_cabecera"
+        android:layout_width="181dp"
+        android:layout_height="89dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/rectanguloscabecera"
+        android:contentDescription="@string/descripcionCabecera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.486"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/imagen_cabecera2"
+        android:layout_width="209dp"
+        android:layout_height="186dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rectanguloscabecera"
+        android:contentDescription="@string/descripcionCabecera"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_cabecera" />
+
+    <ImageView
+        android:id="@+id/foto"
+        android:layout_width="144dp"
+        android:layout_height="144dp"
+        android:background="@drawable/foto"
+        android:contentDescription="@string/descripcionfotomia"
+        android:foreground="@drawable/centro_transparente"
+        app:layout_constraintBottom_toBottomOf="@+id/imagen_cabecera2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imagen_cabecera"
+        app:layout_constraintVertical_bias="0.268" />
+
+    <ScrollView
+        android:id="@+id/scrollBotones"
+        android:layout_width="wrap_content"
+        android:layout_height="270dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textDescripcion">
+
+        <LinearLayout
+            android:id="@+id/linearlayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnCall"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/llamada"
+                android:onClick="abriLlamada"
+                android:text="@string/callme" />
+
+            <Button
+                android:id="@+id/btngithub"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/github"
+                android:onClick="abrirGitHub"
+                android:text="@string/github" />
+
+            <Button
+                android:id="@+id/btnemail"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/email"
+                android:onClick="abrirCorreos"
+                android:text="@string/email" />
+
+            <Button
+                android:id="@+id/btnwhatsapp"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/whatsapp"
+                android:paddingRight="13dp"
+                android:onClick="abrirWhatsapp"
+                android:text="@string/whatsapp" />
+
+            <Button
+                android:id="@+id/btnskill"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/skill"
+                android:drawablePadding="20dp"
+                android:onClick="IntentSkills"
+                android:paddingRight="60dp"
+                android:text="@string/skill" />
+
+            <Button
+                android:id="@+id/btnLinkedin"
+                style="@style/BotonNuevo"
+                android:drawableStart="@drawable/linkedin"
+                android:paddingRight="13dp"
+                android:onClick="abrirLinkedin"
+                android:text="@string/linkedin" />
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/textNameCargo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/perfilmio"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/foto" />
+
+    <TextView
+        android:id="@+id/textNameCargo2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/desarrollador"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameCargo" />
+
+    <TextView
+        android:id="@+id/textDescripcion"
+        android:layout_width="174dp"
+        android:layout_height="69dp"
+        android:text="@string/descripcion"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textNameCargo2" />
+
+    <TextView
+        android:id="@+id/bomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bomb"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:textAlignment="center"
+        app:layout_constraintBottom_toTopOf="@+id/foto"
+        app:layout_constraintEnd_toEndOf="@+id/imagen_cabecera"
+        app:layout_constraintStart_toStartOf="@+id/imagen_cabecera"
+        app:layout_constraintTop_toTopOf="@+id/imagen_cabecera" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="BotonNuevo" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background"> @drawable/estadosboton </item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:layout_width">180dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">20dp</item>
+        <item name="android:paddingRight">40dp</item>
+    </style>
+
+</resources>
